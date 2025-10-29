@@ -1,5 +1,7 @@
 'use strict';
 
+const imgPath = 'img/img-1.jpg';
+
 function CreateImage(imgPath) {
     return new Promise(function (resolve, reject) {
         const img = document.createElement('img');
