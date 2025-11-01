@@ -81,4 +81,20 @@ const loadNpause = async function() {
         console.error(err);
     }
 }
-loadNpause();
+// loadNpause();
+
+// part 3
+const loadAll = async function(imgArr) {
+    try{
+        const imgs = imgArr.map(async img => await CreateImage(img));
+
+        const imgsEl = await Promise.all(imgs);
+        imgsEl.forEach(img => {
+            img.classList.add('parallel');
+        });
+    }
+    catch(err){
+        console.error(err);
+    }
+}
+loadAll(['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']);

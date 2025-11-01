@@ -1,5 +1,16 @@
+.images {
+  display: flex;
+}
+
 .images img {
-  width: 80%; 
   display: block;
-  margin: 20px auto;  
+  width: 80rem;
+  margin: 4rem;
+}
+
+.images img.parallel {
+  width: 40rem;
+  margin: 2rem;
+  border: 3rem solid white;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }
